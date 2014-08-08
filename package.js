@@ -9,7 +9,7 @@ Package.on_use(function (api, where) {
     api.imply('moment', where);
   }
   api.add_files('require-shim.js', where);
+  api.add_files('lib/moment-timezone/builds/moment-timezone-with-data.js', where);
   api.add_files('lib/moment-timezone/moment-timezone.js', where);
-  api.add_files('lib/moment-timezone-data/moment-timezone-data.js', where);
   api.add_files('revert-require-shim.js', where);
 });
